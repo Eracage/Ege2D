@@ -1,0 +1,3 @@
+[submodule "EgeMath"]
+	path = EgeMath
+	url = https://github.com/Eracage/EgeMath.git
