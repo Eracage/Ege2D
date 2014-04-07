@@ -11,8 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\Collider.cpp" />
+    <ClCompile Include="..\src\Collision.cpp" />
+    <ClCompile Include="..\src\PhysicsObject.cpp" />
+    <ClCompile Include="..\src\World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\EgePhysics\Collider.hpp" />
+    <ClInclude Include="..\include\EgePhysics\Collision.hpp" />
+    <ClInclude Include="..\include\EgePhysics\PhysicsObject.hpp" />
+    <ClInclude Include="..\include\EgePhysics\World.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72D9ECB9-6F9D-4F82-B6ED-416C6CA86878}</ProjectGuid>
@@ -41,39 +49,49 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)..\lib\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)/</IntDir>
     <TargetName>$(ProjectName)-d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(ProjectDir)..\lib\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalIncludeDirectories>$(ProjectDir)../include/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../include/$(ProjectName);$(ProjectDir)../../EgeMath/include/;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)../EgeMath/lib/$(Platform)/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>EgeMath-d.lib</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalIncludeDirectories>$(ProjectDir)../include/</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../include/$(ProjectName);$(ProjectDir)../../EgeMath/include/;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Lib>
+      <AdditionalDependencies>EgeMath.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)../EgeMath/lib/$(Platform)/$(Configuration)/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
