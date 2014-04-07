@@ -29,16 +29,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\EgePhysics\Collider.hpp">
+    <ClInclude Include="..\include\Ege2D\Collider.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\EgePhysics\Collision.hpp">
+    <ClInclude Include="..\include\Ege2D\Collision.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\EgePhysics\PhysicsObject.hpp">
+    <ClInclude Include="..\include\Ege2D\PhysicsObject.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\EgePhysics\World.hpp">
+    <ClInclude Include="..\include\Ege2D\World.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

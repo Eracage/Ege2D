@@ -17,14 +17,15 @@
     <ClCompile Include="..\src\World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\EgePhysics\Collider.hpp" />
-    <ClInclude Include="..\include\EgePhysics\Collision.hpp" />
-    <ClInclude Include="..\include\EgePhysics\PhysicsObject.hpp" />
-    <ClInclude Include="..\include\EgePhysics\World.hpp" />
+    <ClInclude Include="..\include\Ege2D\Collider.hpp" />
+    <ClInclude Include="..\include\Ege2D\Collision.hpp" />
+    <ClInclude Include="..\include\Ege2D\PhysicsObject.hpp" />
+    <ClInclude Include="..\include\Ege2D\World.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72D9ECB9-6F9D-4F82-B6ED-416C6CA86878}</ProjectGuid>
-    <RootNamespace>EgePhysics</RootNamespace>
+    <RootNamespace>Ege2D</RootNamespace>
+    <ProjectName>Ege2D</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
