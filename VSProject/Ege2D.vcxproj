@@ -13,14 +13,14 @@
   <ItemGroup>
     <ClCompile Include="..\src\Collider.cpp" />
     <ClCompile Include="..\src\Collision.cpp" />
-    <ClCompile Include="..\src\PhysicsObject.cpp" />
-    <ClCompile Include="..\src\World.cpp" />
+    <ClCompile Include="..\src\PhysicObject2D.cpp" />
+    <ClCompile Include="..\src\World2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Ege2D\Collider.hpp" />
     <ClInclude Include="..\include\Ege2D\Collision.hpp" />
-    <ClInclude Include="..\include\Ege2D\PhysicsObject.hpp" />
-    <ClInclude Include="..\include\Ege2D\World.hpp" />
+    <ClInclude Include="..\include\Ege2D\PhysicObject2D.hpp" />
+    <ClInclude Include="..\include\Ege2D\World2D.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72D9ECB9-6F9D-4F82-B6ED-416C6CA86878}</ProjectGuid>

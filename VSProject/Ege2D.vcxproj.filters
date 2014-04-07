@@ -21,10 +21,10 @@
     <ClCompile Include="..\src\Collision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\PhysicsObject.cpp">
+    <ClCompile Include="..\src\World2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\World.cpp">
+    <ClCompile Include="..\src\PhysicObject2D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +35,10 @@
     <ClInclude Include="..\include\Ege2D\Collision.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\Ege2D\PhysicsObject.hpp">
+    <ClInclude Include="..\include\Ege2D\World2D.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\Ege2D\World.hpp">
+    <ClInclude Include="..\include\Ege2D\PhysicObject2D.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
