@@ -62,7 +62,7 @@
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalIncludeDirectories>$(ProjectDir)../include;$(ProjectDir)../../EgeMath/include/;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../include;$(ProjectDir)../../EgeMath/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
